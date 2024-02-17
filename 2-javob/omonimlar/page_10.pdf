@@ -1,0 +1,546 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yangi avlod o‘quv lug‘atlari</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <div class="section-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar navbar-light navbar_header_first">
+              <div class="container-fluid">
+                <div class="brand_img_text">
+                  <img src="/static/img/Logo.png" alt="Logo" class="logo_img" />
+                  <a class="navbar-brand" href="/">
+                    Yangi avlod o‘quv lug‘atlari va ularning mobil ilovalarini yaratish
+                  </a>
+                </div>
+
+                
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-navbar">
+      <div class="container">
+        <div class="navbar_hr">
+          <nav
+            class="navbar navbar-expand-lg navbar-light navbar_header_second"
+          >
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div
+                class="collapse navbar-collapse navbar_menu"
+                id="navbarTogglerDemo03"
+              >
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="/"
+                      >Bosh sahifa</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown ml-5">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Omonimlar</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/omonims/">Barcha omonimlar</a></li>
+                      <li><a class="dropdown-item" href="/omonims/list/">Harflar kesimida ko‘rish</a></li>
+                      <li><hr class="dropdown-divider"></hr></li>
+                      <li><a class="dropdown-item" href="/omonims/new/">Yangi omonim qo‘shish</a></li>
+                      <li><hr class="dropdown-divider"></hr></li>
+                      <li><a class="dropdown-item" href="/quizes/1/">Test ishlash</a></li>
+                      <li><hr class="dropdown-divider"></hr></li>
+                      <li><a class="dropdown-item" href="https://play.google.com/store/apps/details?id=com.tilshunos.omonims&hl=en">Mobil ilova</a></li>
+                    </ul>
+                  </li>
+                  <!--<li class="nav-item dropdown">-->
+                  <!--  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Antonim</a>-->
+                  <!--  <ul class="dropdown-menu">-->
+                  <!--    <li><a class="dropdown-item" href="#">Barcha antonimlar</a></li>-->
+                  <!--    <li><a class="dropdown-item" href="#">Harflar kesimida ko‘rish</a></li>-->
+                  <!--    <li><hr class="dropdown-divider"></hr></li>-->
+                  <!--    <li><a class="dropdown-item" href="#">Yangi antonim qo‘shish</a></li>-->
+                  <!--  </ul>-->
+                  <!--</li>-->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Sinonimlar</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/sinonims/">Barcha sinonimlar</a></li>
+                      <li><a class="dropdown-item" href="/sinonims/list/">Harflar kesimida ko‘rish</a></li>
+                      <li><hr class="dropdown-divider"></hr></li>
+                      <li><a class="dropdown-item" href="/sinonims/new/">Yangi sinonim qo‘shish</a></li>
+
+
+                      <li><hr class="dropdown-divider"></hr></li>
+                      <li><a class="dropdown-item" href="https://play.google.com/store/apps/details?id=com.tilshunos.sinonims.sinonimlar&hl=en">Mobil ilova</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Paronimlar</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/paronims/">Barcha paronimlar</a></li>
+                      <li><a class="dropdown-item" href="/paronims/list/">Harflar kesimida ko‘rish</a></li>
+                      <li><hr class="dropdown-divider"></hr></li>
+                      <li><a class="dropdown-item" href="/paronims/new/">Yangi paronim qo‘shish</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Morfemalar</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/morphems/">Barcha morfemalar</a></li>
+                      <li><a class="dropdown-item" href="/morphems/list/">Harflar kesimida ko‘rish</a></li>
+                      <li><hr class="dropdown-divider"></hr></li>
+                      <li><a class="dropdown-item" href="/morphems/new/">Yangi morfema qo‘shish</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item ml-5">
+                    <a class="nav-link" href="/project/">Loyiha haqida</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/authors/">Mualliflar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://t.me/Nilufar_Abdurakhmonova_Z">Bog‘lanish</a>
+                  </li>
+                </ul>
+                
+                
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  <!-- ***********************************************MAIN**************************** -->
+  
+<style type="text/css">
+	th{
+		font-weight: bold;
+	}
+	.mazmun {
+		text-align: justify;
+		text-indent: 25px;
+	}
+	.visited{
+		color: blue !important;
+	}
+</style>
+    <div class="container">
+        <h2 class="mt-5 text-center">Omonimlar jadvali</h2>
+        <div>
+            <input type="text" class="m-1 p-1" id="qaylardasan" style="width: 100%;" placeholder="Qidirish uchun kalitso'zni yozing..." onkeyup="getOmonims(this.value)">
+        </div>
+        <table id="simple_table" class="table table-hover">
+        	<thead>
+        		<tr class="text-center" style="background-color: #373C74; color: #FFFFFF;">
+        			<th scope="col" width="3%">№</th>
+        			<th scope="col" width="10%">Omonim</th>
+        			
+        			<th scope="col" width="10%">Til</th>
+        			<th scope="col" width="10%">Turkum</th>
+        			<th scope="col">Ma‘no</th>
+        			
+        			<th scope="col" width="15%">Havola</th>
+        		</tr>
+        	</thead>
+        	<tbody>
+        		
+                    <tr>
+                    	<th scope="row" style='vertical-align: middle;'>91</th>
+                    	<td class="leksema" style='vertical-align: middle;'>
+                    		BALO
+                    		
+                    	</td>
+                    	
+                    	<td class="text-center" style='vertical-align: middle;'> Arabcha </td>
+                    	<td class="text-center" style='vertical-align: middle;'> ot </td>
+                    	<td class="mazmun" style="vertical-align: middle; font-family: 'Roboto', sans-serif;"> بلاء – “sinov; ofat, musibat, baxtsizlik” </td>
+                    	
+                    	<td class="text-center" style='vertical-align: middle;'>
+							<a href="/omonims/91/" class='btn btn-success'>
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+									<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+									<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+								</svg>
+							</a>
+							
+						</td>
+                    </tr>
+                
+                    <tr>
+                    	<th scope="row" style='vertical-align: middle;'>92</th>
+                    	<td class="leksema" style='vertical-align: middle;'>
+                    		BALO
+                    		
+                    	</td>
+                    	
+                    	<td class="text-center" style='vertical-align: middle;'> Arabcha </td>
+                    	<td class="text-center" style='vertical-align: middle;'> sifat </td>
+                    	<td class="mazmun" style="vertical-align: middle; font-family: 'Roboto', sans-serif;"> بلع – “balog‘atga yetmoq” </td>
+                    	
+                    	<td class="text-center" style='vertical-align: middle;'>
+							<a href="/omonims/92/" class='btn btn-success'>
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+									<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+									<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+								</svg>
+							</a>
+							
+						</td>
+                    </tr>
+                
+                    <tr>
+                    	<th scope="row" style='vertical-align: middle;'>93</th>
+                    	<td class="leksema" style='vertical-align: middle;'>
+                    		BALQIMOQ
+                    		
+                    	</td>
+                    	
+                    	<td class="text-center" style='vertical-align: middle;'>  </td>
+                    	<td class="text-center" style='vertical-align: middle;'> fe’l </td>
+                    	<td class="mazmun" style="vertical-align: middle; font-family: 'Roboto', sans-serif;">   </td>
+                    	
+                    	<td class="text-center" style='vertical-align: middle;'>
+							<a href="/omonims/93/" class='btn btn-success'>
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+									<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+									<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+								</svg>
+							</a>
+							
+						</td>
+                    </tr>
+                
+                    <tr>
+                    	<th scope="row" style='vertical-align: middle;'>94</th>
+                    	<td class="leksema" style='vertical-align: middle;'>
+                    		BALQIMOQ
+                    		
+                    	</td>
+                    	
+                    	<td class="text-center" style='vertical-align: middle;'>  </td>
+                    	<td class="text-center" style='vertical-align: middle;'> fe’l </td>
+                    	<td class="mazmun" style="vertical-align: middle; font-family: 'Roboto', sans-serif;">   </td>
+                    	
+                    	<td class="text-center" style='vertical-align: middle;'>
+							<a href="/omonims/94/" class='btn btn-success'>
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+									<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+									<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+								</svg>
+							</a>
+							
+						</td>
+                    </tr>
+                
+                    <tr>
+                    	<th scope="row" style='vertical-align: middle;'>95</th>
+                    	<td class="leksema" style='vertical-align: middle;'>
+                    		BAND
+                    		
+                    	</td>
+                    	
+                    	<td class="text-center" style='vertical-align: middle;'> Fors-tojikcha </td>
+                    	<td class="text-center" style='vertical-align: middle;'> ot </td>
+                    	<td class="mazmun" style="vertical-align: middle; font-family: 'Roboto', sans-serif;"> بستن &gt; بند – “bog‘lamoq, to‘smoq, berkitmoq” </td>
+                    	
+                    	<td class="text-center" style='vertical-align: middle;'>
+							<a href="/omonims/95/" class='btn btn-success'>
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+									<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+									<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+								</svg>
+							</a>
+							
+						</td>
+                    </tr>
+                
+                    <tr>
+                    	<th scope="row" style='vertical-align: middle;'>96</th>
+                    	<td class="leksema" style='vertical-align: middle;'>
+                    		BAND
+                    		
+                    	</td>
+                    	
+                    	<td class="text-center" style='vertical-align: middle;'> Fors-tojikcha </td>
+                    	<td class="text-center" style='vertical-align: middle;'> ot </td>
+                    	<td class="mazmun" style="vertical-align: middle; font-family: 'Roboto', sans-serif;"> بند – “bob, qism, modda” </td>
+                    	
+                    	<td class="text-center" style='vertical-align: middle;'>
+							<a href="/omonims/96/" class='btn btn-success'>
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+									<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+									<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+								</svg>
+							</a>
+							
+						</td>
+                    </tr>
+                
+                    <tr>
+                    	<th scope="row" style='vertical-align: middle;'>97</th>
+                    	<td class="leksema" style='vertical-align: middle;'>
+                    		BAND
+                    		
+                    	</td>
+                    	
+                    	<td class="text-center" style='vertical-align: middle;'> Fors-tojikcha </td>
+                    	<td class="text-center" style='vertical-align: middle;'> ot </td>
+                    	<td class="mazmun" style="vertical-align: middle; font-family: 'Roboto', sans-serif;"> بند – “bog‘lam; to‘siq; qamoq” </td>
+                    	
+                    	<td class="text-center" style='vertical-align: middle;'>
+							<a href="/omonims/97/" class='btn btn-success'>
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+									<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+									<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+								</svg>
+							</a>
+							
+						</td>
+                    </tr>
+                
+                    <tr>
+                    	<th scope="row" style='vertical-align: middle;'>98</th>
+                    	<td class="leksema" style='vertical-align: middle;'>
+                    		BAND
+                    		
+                    	</td>
+                    	
+                    	<td class="text-center" style='vertical-align: middle;'> Fors-tojikcha </td>
+                    	<td class="text-center" style='vertical-align: middle;'> sifat </td>
+                    	<td class="mazmun" style="vertical-align: middle; font-family: 'Roboto', sans-serif;"> بند – “to‘silgan, berkitilgan” </td>
+                    	
+                    	<td class="text-center" style='vertical-align: middle;'>
+							<a href="/omonims/98/" class='btn btn-success'>
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+									<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+									<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+								</svg>
+							</a>
+							
+						</td>
+                    </tr>
+                
+                    <tr>
+                    	<th scope="row" style='vertical-align: middle;'>99</th>
+                    	<td class="leksema" style='vertical-align: middle;'>
+                    		BANDA
+                    		
+                    	</td>
+                    	
+                    	<td class="text-center" style='vertical-align: middle;'> Fors-tojikcha </td>
+                    	<td class="text-center" style='vertical-align: middle;'> ot </td>
+                    	<td class="mazmun" style="vertical-align: middle; font-family: 'Roboto', sans-serif;"> بنده – “qul, itoatkor; kamina” </td>
+                    	
+                    	<td class="text-center" style='vertical-align: middle;'>
+							<a href="/omonims/99/" class='btn btn-success'>
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+									<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+									<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+								</svg>
+							</a>
+							
+						</td>
+                    </tr>
+                
+                    <tr>
+                    	<th scope="row" style='vertical-align: middle;'>100</th>
+                    	<td class="leksema" style='vertical-align: middle;'>
+                    		BANDA
+                    		
+                    	</td>
+                    	
+                    	<td class="text-center" style='vertical-align: middle;'> Italyancha </td>
+                    	<td class="text-center" style='vertical-align: middle;'> ot </td>
+                    	<td class="mazmun" style="vertical-align: middle; font-family: 'Roboto', sans-serif;">  banda – “to‘plam, to‘da” </td>
+                    	
+                    	<td class="text-center" style='vertical-align: middle;'>
+							<a href="/omonims/100/" class='btn btn-success'>
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+									<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+									<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+								</svg>
+							</a>
+							
+						</td>
+                    </tr>
+                
+				<tr>
+					<td colspan="6" style="border: none; height: 50px;">
+						<ul class="pagination justify-content-center mt-3">
+							<script>
+								if ( 10 > 1) 
+									document.write("<li class='page-item mr-5'><a href='?page=1' class='page-link' style='font-size: 18px; '>&laquo;</a></li>");
+							</script>
+							<li class="page-item" style="margin-left: 25px !important; margin-right: 25px !important;">
+								
+									<a href="?page=9" class="page-link" style="background: #392D7D !important; color: #FFFFFF !important;">&lt;</a>
+								
+							</li>
+							<script>
+								for (var j = 10-5; j <= 10+5; j++) {
+									if (j==10)
+										document.write("<li class='page-item' style='margin-left: 15px;'><a class='page-link' style='background: #6457B1; color: #FFFFFF !important;'>" + j + "</a></li>");
+									else
+										if ( j >= 1 && j< 251)
+											document.write("<li class='page-item' style='margin-left: 15px;'><a href='?page=" + j + "' class='page-link'>" + j + "</a></li>");
+								}
+							</script>
+							
+								<li class="page-item" style="margin-left: 25px !important; margin-right: 25px !important;">
+									<a href="?page=11" class="page-link" style="background: #392D7D !important; color: #FFFFFF !important;">&gt;</a>
+								</li>
+							
+
+							<script>
+								if ( 10 < 251) 
+									document.write("<li class='page-item ml-5'><a href='?page=251' class='page-link' style='font-size: 18px; '>&raquo;</a></li>");
+							</script>
+						</ul>
+					</td>
+				</tr>
+        	</tbody>
+        </table>
+        <table id="result_table" class="table table-hover" hidden="hidden">
+        	<thead>
+        		<tr class="text-center" style="background-color: #373C74; color: #FFFFFF;">
+        			<th scope="col" width="3%">№</th>
+        			<th scope="col" width="10%">Omonim</th>
+        			
+        			<th scope="col" width="10%">Til</th>
+        			<th scope="col" width="10%">Turkum</th>
+        			<th scope="col">Ma‘no</th>
+        			
+        			<th scope="col" width="15%">Havola</th>
+        		</tr>
+        	</thead>
+        	<tbody id="results">
+                <tr><th colspan='6'>Iltimos, kamida 3 ta belgi kiriting</th></tr>
+        	</tbody>
+        </table>
+    </div>
+
+    <script>
+        function getOmonims(txt) {
+            document.getElementById('simple_table').hidden = true;
+            document.getElementById('result_table').hidden = false;
+            if (txt.length < 3) {
+                document.getElementById('results').innerHTML = "<tr><th colspan='6'>Iltimos, kamida 3 ta belgi kiriting</th></tr>";
+            }
+            else {
+                URL = "/omonims/api/search/" + txt + "/";
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                    if (this.responseText == '[]')
+                        document.getElementById('results').innerHTML = "<tr><th colspan='6' class='bg-danger'>Ushbu kalitso'z bo'yicha omonim topilmadi</th></tr>";
+                    else {
+                        var words = JSON.parse(this.responseText);
+                        var html_table = ""
+                        for (var i = 0; i < words.length; i++) {
+                            var html_row = "<tr>" +
+                                "<th scope='row' style='vertical-align: middle;'>" + String(i + 1) + "</th>" +
+                                "<td class='leksema' style='vertical-align: middle;'>" + words[i]['leksema'] + "</td>" +
+                                "<td class='text-center' style='vertical-align: middle;'>" + words[i]['til'] + "</td>" +
+                                "<td class='text-center' style='vertical-align: middle;'>" + words[i]['turkum'] + "</td>" +
+                                "<td class='mazmun' style='vertical-align: middle;'>" + words[i]['mano'] + "</td>" +
+                                "<td class=text-center style='vertical-align: middle;'>" +
+                                "<a href='/omonims/" + words[i]['id'] + "/' class='btn btn-success'>" +
+                                "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-eye' viewBox='0 0 16 16'>" +
+                                "<path d='M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z'/>" +
+                                "<path d='M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z'/>" +
+                                "</svg>" +
+                                "</a>" +
+                                "</td>" +
+                                "</tr>";
+                            html_table += html_row;
+                        }
+                        document.getElementById('results').innerHTML = html_table;
+                    }
+                }
+                    xhttp.open("GET", URL);
+                    xhttp.send();
+            }
+
+        }
+    </script>
+
+  <!-- ****************************************FOOTER******************************* -->
+  <section class="section_footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <p class="footer_menu">Menu</p>
+          <ul class="item_paper">
+            <li class="item_paper_link"><a href="/">Bosh sahifa</a></li>
+            <li class="item_paper_link"><a href="#">Antonimlar</a></li>
+            <li class="item_paper_link"><a href="#">Sinonimlar</a></li>
+            <li class="item_paper_link"><a href="#">Paronimlar</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <p class="footer_menu">ADDRESS</p>
+          <div class="location">
+            <img src="/static/img/location_icon.png" alt="Adress" />
+            <span class="location_text"
+              >Tashkent, Amir Temur street, 108 building</span
+            >
+          </div>
+          <p class="footer_menu social_media">SOCIAL MEDIA</p>
+          <div class="social_media_icon">
+            <a href="#"><i class="fab fa-telegram-plane"></i></a>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1474.8710089757578!2d69.28525741975976!3d41.34010635172022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b534175ed31%3A0x52a8f9d9414a2ad8!2z0KLQsNGI0LrQtdC90YLRgdC60LjQuSDQo9C90LjQstC10YDRgdC40YLQtdGCINCY0L3RhNC-0YDQvNCw0YbQuNC-0L3QvdGL0YUg0KLQtdGF0L3QvtC70L7Qs9C40Lk!5e0!3m2!1sru!2s!4v1633515019831!5m2!1sru!2s"
+              width="100%"
+              height="190"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="secton_footer_second">
+    <div class="copyright">
+      <p class="copyright_text">
+          
+          © 2024 Developed by <a href="https://t.me/SarvarAzim">SarvarAzim</a> |
+        All rights reserved!
+      </p>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
